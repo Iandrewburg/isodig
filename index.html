@@ -6,22 +6,52 @@
     <title>ISODIG</title>
     <style>
         body {
+            background-color: #00FFFF; /* Bright cyan background */
+            color: #FF00FF; /* Bright magenta text */
+            font-family: "Comic Sans MS", cursive, sans-serif; /* Comic Sans, classic 90s! */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            flex-direction: column;
         }
 
         h1 {
-            font-size: 48px;
-            color: #333;
+            font-size: 72px;
+            color: #FF4500; /* Orange-red color */
+            text-shadow: 2px 2px 0 #000; /* Shadow for that "popping" look */
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #FFD700; /* Gold color */
+            color: #000080; /* Navy text */
+            border: 3px solid #FF0000; /* Red border */
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0 #000; /* 3D button look */
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        button:hover {
+            background-color: #00FF00; /* Bright green when hovered */
         }
     </style>
 </head>
 <body>
     <h1>ISODIG</h1>
+
+    <div class="button-container">
+        <button>Home</button>
+        <button>About</button>
+        <button>Gallery</button>
+        <button>Contact</button>
+    </div>
 </body>
 </html>
