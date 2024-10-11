@@ -6,9 +6,10 @@
     <title>ISODIG</title>
     <style>
         body {
-            background-color: #00FFFF; /* Bright cyan background */
+            background-image: url('https://www.transparenttextures.com/patterns/green-fibers.png'); /* Rainforest-like texture */
+            background-color: #228B22; /* Forest green background */
             color: #FF00FF; /* Bright magenta text */
-            font-family: "Comic Sans MS", cursive, sans-serif; /* Comic Sans, classic 90s! */
+            font-family: "Comic Sans MS", cursive, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,10 +18,26 @@
             flex-direction: column;
         }
 
+        /* Under Construction Banner */
+        .banner {
+            width: 100%;
+            background-color: #FFD700; /* Gold background */
+            color: #000000; /* Black text */
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
         h1 {
             font-size: 72px;
             color: #FF4500; /* Orange-red color */
             text-shadow: 2px 2px 0 #000; /* Shadow for that "popping" look */
+            margin-top: 80px; /* Move down to make room for the banner */
         }
 
         .button-container {
@@ -42,9 +59,25 @@
         button:hover {
             background-color: #00FF00; /* Bright green when hovered */
         }
+
+        /* Rainforest elements */
+        body:before {
+            content: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Tropical_rainforest.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1; /* Light rainforest background image */
+            z-index: -1;
+        }
+
     </style>
 </head>
 <body>
+    <!-- Under Construction Banner -->
+    <div class="banner">🚧 UNDER CONSTRUCTION 🚧</div>
+
     <h1>ISODIG</h1>
 
     <div class="button-container">
